@@ -46,3 +46,15 @@ class Hero(Creature):
 
         self.arme = arme
         self.inventaire = []
+
+
+class Monstre(Creature):
+
+    def __init__(self, nom, description, pv, defense, resistances=None):
+
+        super().__init__(nom, description, pv, defense, "Magique")
+
+        if resistances is None:
+            resistances = []
+
+        self.resistances = resistances
