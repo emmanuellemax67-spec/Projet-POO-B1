@@ -36,3 +36,13 @@ class Creature:
         print("Défense :", self.defense)
         print("Type dégâts :", self.typeDegats)
         print("Etats :", self.etats)
+
+
+class Hero(Creature):
+
+    def __init__(self, nom, description, pv, defense, arme):
+
+        super().__init__(nom, description, pv, defense, "Tranchant")
+
+        self.arme = arme
+        self.inventaire = []
