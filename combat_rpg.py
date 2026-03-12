@@ -33,7 +33,7 @@ class Hero(Creature):
         self.description = description
         self.pv = pv
         self.defense = defense
-        self.type_degats = arme
+        self.type_degats = arme.type_degats
         self.etats = []
         self.actions = []
         self.initiative = 0
@@ -76,3 +76,25 @@ class Monstre(Creature):
         print("Type dégâts :", self.type_degats)
         print("Etats :", self.etats)
         print("Résistances :", self.resistances)
+
+
+class Arme:
+
+    def __init__(self, nom, nb_des, faces, type_degats):
+        self.nom = nom
+        self.nb_des = nb_des
+        self.faces = faces
+        self.type_degats = type_degats
+
+    def lancer_degats(self):
+        return lancer_des(self.nb_des, self.faces)
+
+
+CATALOGUE_ARMES = [
+    Arme("Epée", 1, 8, "Tranchant"),
+    Arme("Dague", 1, 4, "Perçant"),
+    Arme("Hache", 2, 6, "Tranchant"),
+    Arme("Arc", 1, 8, "Perçant"),
+    Arme("Marteau", 2, 6, "Contondant"),
+    Arme("Bâton", 1, 6, "Magique"),
+]
