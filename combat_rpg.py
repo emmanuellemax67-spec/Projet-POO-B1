@@ -76,38 +76,3 @@ class Monstre(Creature):
         print("Type dégâts :", self.type_degats)
         print("Etats :", self.etats)
         print("Résistances :", self.resistances)
-
-
-CATALOGUE_HEROS = [
-
-    {"nom": "Guerrier", "description": "Brave combattant proche du corps à corps",
-        "pv": 35, "defense": 12, "arme": "Epée"},
-
-    {"nom": "Mage", "description": "Maître de la magie offensive",
-        "pv": 25, "defense": 10, "arme": "Bâton"},
-
-    {"nom": "Archer", "description": "Expert du combat à distance",
-        "pv": 28, "defense": 11, "arme": "Arc"},
-
-    {"nom": "Paladin", "description": "Guerrier sacré protecteur",
-        "pv": 40, "defense": 14, "arme": "Marteau"},
-
-    {"nom": "Assassin", "description": "Combattant furtif et rapide",
-        "pv": 26, "defense": 13, "arme": "Dague"},
-
-    {"nom": "Barbare", "description": "Guerrier sauvage très puissant",
-        "pv": 45, "defense": 10, "arme": "Hache"},
-
-    {"nom": "Sorcier", "description": "Utilisateur de magie élémentaire",
-        "pv": 30, "defense": 9, "arme": "Sceptre"},
-
-    {"nom": "Chevalier", "description": "Protecteur lourdement armé",
-        "pv": 38, "defense": 15, "arme": "Epée longue"},
-
-    {"nom": "Ranger", "description": "Chasseur des forêts",
-        "pv": 32, "defense": 12, "arme": "Arc long"},
-
-    {"nom": "Moine", "description": "Combattant agile et spirituel",
-        "pv": 33, "defense": 13, "arme": "Bâton de combat"}
-
-]
